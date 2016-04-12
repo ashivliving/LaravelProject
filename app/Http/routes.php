@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/home',function(){
-	echo "Home page!";
+	return view('home');
 });
