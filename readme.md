@@ -1,27 +1,56 @@
-# Laravel PHP Framework
+#Laravel Content Management System
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+I have made a simple content management system using laravel 5.2.* and Bootstrap 3.
+There might be many errors in the project, feel free to push changes. :)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+#Installation
+ 
+Pre-Installation -
+You should have installed
+1)PHP > 5.3
+2)Composer
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Install - 
 
-## Official Documentation
+1)clone the repository by
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+ - git clone https://github.com/ashivliving/LaravelProject.git
 
-## Contributing
+2)Change to root directory of project
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+ - cd LaravelProject
 
-## Security Vulnerabilities
+3)Install the dependencies
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+ - composer install
 
-## License
+4)Give permissions to /storage and /bootstrap
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+  - chmod 777 -R /storage
+  - chmod 777 -R /bootstrap
+
+5)create a database
+
+6)Setup the credentials in .env file
+
+ - nano .env
+
+ give the credentials for
+
+ 	DB_DATABASE= (database_name)
+	DB_USERNAME= (database_username)
+	DB_PASSWORD= (database_password)
+
+7)migrate the table
+
+ - php artisan migrate
+
+8)start the server
+
+- php artisan serve
+
+& you are good to go...... :)
+
+------------------------------------
+
+Feel free to give suggesions and commit changes. :)
