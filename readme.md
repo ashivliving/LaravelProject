@@ -7,8 +7,11 @@ There might be many errors in the project, feel free to push changes. :)
  
 Pre-Installation -
 You should have installed
--PHP > 5.3
--Composer
+
+0) set up -
+
+- PHP > 5.3
+- Composer
 
 Install - 
 
@@ -37,9 +40,9 @@ Install -
 
  give the credentials for
 
- 	-> DB_DATABASE= (database_name)
-	-> DB_USERNAME= (database_username)
-	-> DB_PASSWORD= (database_password)
+ 	- DB_DATABASE= (database_name)
+	- DB_USERNAME= (database_username)
+	- DB_PASSWORD= (database_password)
 
 7)migrate the table
 
