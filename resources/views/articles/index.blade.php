@@ -4,8 +4,15 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
       @foreach($articles as $article)
+      <?php 
+        $articletitle = $article->title;
+        $len = strlen($articletitle);
+        if($len>45)
+          {$articletitle = substr($articletitle,0,45);
+            $articletitle = $articletitle . "...";}
+      ?>
         <div class="article">
-          <h4>{{ link_to_route('articles.show',$article->title,array($article->id)) }}</h4>
+          <h4>{{ link_to_route('articles.show',$articletitle,array($article->id)) }}</h4>
           <div class="timestamp">Published at: {{ $article->created_at->format('d-m-y') }}</div>
           @if(\Auth::user())
             @if($article->user_id == \Auth::user()->id)
