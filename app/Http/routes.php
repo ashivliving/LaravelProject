@@ -31,4 +31,6 @@
     Route::get('/logout',['middleware'=>'auth','as'=>'logout','uses'=>'AuthController@logout']);
     Route::resource('users','UsersController',['only'=>['create','store']]);
     Route::resource('articles','ArticlesController');
+    Route::get('/fblogin','PagesController@fb');
+    Route::get('/geogram',['as' => 'geogram', 'uses' => 'PagesController@geo']);
 //});

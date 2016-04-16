@@ -14,4 +14,11 @@ class PagesController extends Controller
     	}
     	return view('pages.welcome');
     }
+
+    public function fb(){
+    	return view('pages.fb');
+    }
+    public function geo(){
+    	return view('pages.geogram');
+    }
 }
